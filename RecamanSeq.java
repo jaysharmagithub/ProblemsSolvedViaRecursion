@@ -8,7 +8,7 @@ public class RecamanSeq{
    }else {
       int prev = arr[index-1];
       int next = prev-index;
-      if(next >=0 && !contains(num-prev,arr,index)){
+      if(next >=0 && !contains(next,arr,index)){
          arr[index]=next;
       }else arr[index]=prev+index;
     }
